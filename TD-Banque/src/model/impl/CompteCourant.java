@@ -4,6 +4,7 @@ import java.util.UUID;
 import java.lang.StringBuilder;
 
 import model.dec.CompteManip;
+import model.exceptions.InsufficientBalance;
 
 /**
  * Modelsa check account.
@@ -41,10 +42,11 @@ public final class CompteCourant extends Compte implements CompteManip {
     }
 
     @Override
-    public double withdraw(double amount){
+    public double withdraw(double amount) throws InsufficientBalance{
         double previous = this.getBalance();
-        if(previous - amount > 0 - this.overdraft) {
-            this.setBalance(previous - amount);
+
+        if(previous - amount < 0.0d) {
+            throw new InsufficientBalance("Overdraft. Current balance ="+previous);
         }
         return this.getBalance();
     }
