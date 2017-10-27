@@ -7,7 +7,7 @@ import java.lang.StringBuilder;
 public final class SalleCinema{
 	private static final Logger LOG = Logger.getLogger(SalleCinema.class.getCanonicalName());
 	private String film;
-	public int nbPlaces;
+	public static final int nbPlaces;
 	private double tarif;
 	private int nbPlacesVendues;
 
