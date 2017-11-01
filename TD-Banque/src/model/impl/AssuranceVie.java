@@ -5,7 +5,6 @@ import java.util.Calendar;
 /**
 * Model a check account
 */
-
 public  final class AssuranceVie extends Compte {
 
 	private final Calendar creationDate;
@@ -33,7 +32,6 @@ public  final class AssuranceVie extends Compte {
 		return this.getBalance();
 
 	}
-
 	@Override
 	public double deposite(double amount){
 		double previous = this.getBalance();

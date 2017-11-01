@@ -16,7 +16,6 @@ public final class CompteEpargne extends Compte
         else
         {
         	System.out.println ("Erreur : Taux d'interêt nul ou négatif !");
-
         }
     }
 
