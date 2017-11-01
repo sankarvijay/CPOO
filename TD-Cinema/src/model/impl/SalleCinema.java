@@ -3,11 +3,14 @@ package model.impl;
 import java.lang.String;
 import java.util.logging.Logger;
 import java.lang.StringBuilder;
+import model.dec.CinemaItf;
+import model.exceptions.SallePleine;
 
-public final class SalleCinema{
+
+public final class SalleCinema implements CinemaItf{
 	private static final Logger LOG = Logger.getLogger(SalleCinema.class.getCanonicalName());
 	private String film;
-	public static final int nbPlaces;
+	public static  int nbPlaces;
 	private double tarif;
 	private int nbPlacesVendues;
 
@@ -24,7 +27,16 @@ public final class SalleCinema{
 		this.nbPlacesVendues=0;
 	}
 
-	public void vendrePlace(){
+	@Override
+	public void vendrePlace() throws SallePleine{
+		try{
+			if (nbPlacesDisponible()==0) {
+				throw new SallePleine("Salle remplie");
+			}
+		}catch(SallePleine ex){
+			LOG.severe("Salle remplie avec "+nbPlacesVendues+" personne");
+            throw ex;
+		}
 		this.nbPlacesVendues++;
 	}
 
@@ -44,7 +56,7 @@ public final class SalleCinema{
 		if(this.nbPlaces==this.nbPlacesVendues){
 			LOG.severe("La salle est remplie");
 		}else{
-			LOG.severe("Il reste : "+nbPlacesDisponible());
+			LOG.severe("Il reste : "+nbPlacesDisponible()+" places");
 		}
 	}
 
