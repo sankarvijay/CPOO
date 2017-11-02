@@ -22,9 +22,9 @@ public final class Main {
         SalleCinema s1 = new SalleCinema();
         SalleCinema s2 = sf.createSalleCinema("Harry Potter 8",200,9.5);
 
-        s2.estPleine();
+        //s2.estPleine();
         try{
-            for(int i=0;i<200;i++){
+            for(int i=0;i<=250;i++){
                 s2.vendrePlace();
             }
         }catch(SallePleine ex){

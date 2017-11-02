@@ -34,7 +34,7 @@ public final class SalleCinema implements CinemaItf{
 				throw new SallePleine("Salle remplie");
 			}
 		}catch(SallePleine ex){
-			LOG.severe("Salle remplie avec "+nbPlacesVendues+" personne");
+			LOG.severe("La salle est déjà remplie, elle contient "+nbPlacesVendues+" personnes");
             throw ex;
 		}
 		this.nbPlacesVendues++;
