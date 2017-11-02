@@ -19,24 +19,22 @@ public class Employe implements EntrepriseItf{
 		try{
 			if (salaireHoraire<13.0d) {
 				throw new SalaireHoraireInsuffisant("Salaire Horaire de base insuffisant, il est actuellement de "+salaireHoraire+" euros");
+			}else{
+				this.salaireHoraire=salaireHoraire;
 			}
 		}catch(SalaireHoraireInsuffisant ex){
 			LOG.severe("L'heure de base ne doit pas etre en dessous de 13 euros.");
 		}
-		this.salaireHoraire=salaireHoraire;
 
 		try{
 			if (heuresTravailles>60) {
 				throw new HeuresTravailDepasse("Heures de travailles dépasses de "+(60-heuresTravailles)+" heures");
+			}else{
+				this.heuresTravailles=heuresTravailles;
 			}
 		}catch(HeuresTravailDepasse ex){
 			LOG.severe("On peut pas travailler plus de 60 heures.");
 		}
-		this.heuresTravailles=heuresTravailles;
-	}
-
-	public Employe(String nom){
-		this(nom,13.0d,40);
 	}
 
 	@Override
@@ -70,9 +68,13 @@ public class Employe implements EntrepriseItf{
 
     public String toString(){
         StringBuilder sb = new StringBuilder();
-        sb.append(this.nom).append(",").append("salaire horaire : ").
-        append(this.salaireHoraire).append(" euros; heures travaillées : ").append(this.heuresTravailles);
-        
+        if(salaireHoraire<13 || heuresTravailles>60){
+
+        }else{
+			sb.append(this.nom).append(",").append("salaire horaire : ").
+        	append(this.salaireHoraire).append(" euros; heures travaillées : ").append(this.heuresTravailles);
+        }
+       
         return sb.toString(); //Retouner avec le .toString() car c'est un stringBuilder (ATTENTION !!)
     }
 }
