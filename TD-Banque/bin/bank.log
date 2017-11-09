@@ -2,180 +2,30 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2017-10-13T17:47:13</date>
-  <millis>1507909633289</millis>
+  <date>2017-10-13T15:46:48.362791Z</date>
+  <millis>1507909608362</millis>
+  <nanos>791000</nanos>
   <sequence>1</sequence>
   <logger>main.Main</logger>
   <level>SEVERE</level>
   <class>main.Main</class>
   <method>main</method>
   <thread>1</thread>
-  <message>Overdraft. Current balance = 1500.0</message>
+  <message>Overdraft. Current balance = 100.0 Current ceiling = 50.0</message>
 </record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
 <record>
-  <date>2017-10-13T17:47:13</date>
-  <millis>1507909633290</millis>
-  <sequence>2</sequence>
+  <date>2017-10-13T15:56:35.120876Z</date>
+  <millis>1507910195120</millis>
+  <nanos>876000</nanos>
+  <sequence>0</sequence>
   <logger>main.Main</logger>
-  <level>INFO</level>
+  <level>SEVERE</level>
   <class>main.Main</class>
   <method>main</method>
   <thread>1</thread>
-  <message>Compte 7c2f03df-a289-48cd-95ed-b7f97eda4289
-Owner : John Doe
-Balance : 1500.0
-</message>
 </record>
 </log>
-oct. 13, 2017 5:54:26 PM main.Main main
-GRAVE: Overdraft. Current balance = 1500.0
-oct. 13, 2017 5:54:26 PM main.Main main
-GRAVE: Overdraft. Current balance = 1500.0
-oct. 13, 2017 5:54:26 PM main.Main main
-PRÉCIS: Withdraw operation of Vijay1900.0
-oct. 13, 2017 5:54:26 PM main.Main main
-PRÉCIS: Withdraw operation of Vijay1900.0
-oct. 13, 2017 5:54:26 PM main.Main main
-INFOS: Compte 56b96e50-bfa2-4b31-ae1a-bac2e78d3ad2
-Owner : John Doe
-Balance : 1500.0
-
-oct. 13, 2017 5:54:26 PM main.Main main
-INFOS: Compte 56b96e50-bfa2-4b31-ae1a-bac2e78d3ad2
-Owner : John Doe
-Balance : 1500.0
-
-oct. 13, 2017 5:55:03 PM main.Main main
-PRÉCIS: Withdraw operation of Vijay1900.0
-oct. 13, 2017 5:55:03 PM main.Main main
-PRÉCIS: Withdraw operation of Vijay1900.0
-oct. 13, 2017 5:55:03 PM main.Main main
-INFOS: Compte 7874c03b-5b35-41b0-9a93-f43a0fb56d65
-Owner : John Doe
-Balance : 1500.0
-
-oct. 13, 2017 5:55:03 PM main.Main main
-INFOS: Compte 7874c03b-5b35-41b0-9a93-f43a0fb56d65
-Owner : John Doe
-Balance : 1500.0
-
-oct. 13, 2017 5:55:42 PM main.Main main
-PRÉCIS: Withdraw operation of Vijay1900.0
-oct. 13, 2017 5:55:42 PM main.Main main
-PRÉCIS: Withdraw operation of Vijay1900.0
-oct. 13, 2017 5:55:42 PM main.Main main
-INFOS: Compte a8779040-21ed-416f-91ac-625cf2b13288
-Owner : John Doe
-Balance : 1500.0
-
-oct. 13, 2017 5:55:42 PM main.Main main
-INFOS: Compte a8779040-21ed-416f-91ac-625cf2b13288
-Owner : John Doe
-Balance : 1500.0
-
-oct. 13, 2017 5:56:06 PM main.Main main
-GRAVE: Overdraft. Current balance = 1500.0
-oct. 13, 2017 5:56:06 PM main.Main main
-GRAVE: Overdraft. Current balance = 1500.0
-oct. 13, 2017 5:56:06 PM main.Main main
-PRÉCIS: Withdraw operation of Vijay1900.0
-oct. 13, 2017 5:56:06 PM main.Main main
-PRÉCIS: Withdraw operation of Vijay1900.0
-oct. 13, 2017 5:56:06 PM main.Main main
-INFOS: Compte 165f204b-9999-4a87-a354-b29e87979eea
-Owner : John Doe
-Balance : 1500.0
-
-oct. 13, 2017 5:56:06 PM main.Main main
-INFOS: Compte 165f204b-9999-4a87-a354-b29e87979eea
-Owner : John Doe
-Balance : 1500.0
-
-oct. 13, 2017 5:56:35 PM main.Main main
-GRAVE: Overdraft. Current balance = 1500.0
-oct. 13, 2017 5:56:35 PM main.Main main
-GRAVE: Overdraft. Current balance = 1500.0
-oct. 13, 2017 5:56:35 PM main.Main main
-PRÉCIS: Withdraw operation of Vijay1900.0
-oct. 13, 2017 5:56:35 PM main.Main main
-PRÉCIS: Withdraw operation of Vijay1900.0
-oct. 13, 2017 5:56:35 PM main.Main main
-INFOS: Compte f6781229-2e5d-4b67-9a61-e477d83ae5fe
-Owner : John Doe
-Balance : 1500.0
-
-oct. 13, 2017 5:56:35 PM main.Main main
-INFOS: Compte f6781229-2e5d-4b67-9a61-e477d83ae5fe
-Owner : John Doe
-Balance : 1500.0
-
-oct. 13, 2017 6:00:47 PM main.Main main
-GRAVE: Overdraft. Current balance = 1500.0
-oct. 13, 2017 6:00:47 PM main.Main main
-GRAVE: Overdraft. Current balance = 1500.0
-oct. 13, 2017 6:00:47 PM main.Main main
-PRÉCIS: Withdraw operation of Vijay1900.0
-oct. 13, 2017 6:00:47 PM main.Main main
-PRÉCIS: Withdraw operation of Vijay1900.0
-oct. 13, 2017 6:00:47 PM main.Main main
-INFOS: Test de logger
-oct. 13, 2017 6:00:47 PM main.Main main
-INFOS: Test de logger
-oct. 13, 2017 6:00:47 PM main.Main main
-INFOS: Compte e05034f1-5efc-4614-accb-e49b8655fcb5
-Owner : John Doe
-Balance : 1500.0
-
-oct. 13, 2017 6:00:47 PM main.Main main
-INFOS: Compte e05034f1-5efc-4614-accb-e49b8655fcb5
-Owner : John Doe
-Balance : 1500.0
-
-oct. 13, 2017 6:04:12 PM main.Main main
-GRAVE: Overdraft. Current balance = 1500.0
-oct. 13, 2017 6:04:12 PM main.Main main
-GRAVE: Overdraft. Current balance = 1500.0
-oct. 13, 2017 6:04:12 PM main.Main main
-PRÉCIS: Withdraw operation of Vijay1900.0
-oct. 13, 2017 6:04:12 PM main.Main main
-PRÉCIS: Withdraw operation of Vijay1900.0
-oct. 13, 2017 6:04:12 PM main.Main main
-PRÉCIS: VIIIIIIIIIIIIIIIIIJAY
-oct. 13, 2017 6:04:12 PM main.Main main
-PRÉCIS: VIIIIIIIIIIIIIIIIIJAY
-oct. 13, 2017 6:04:12 PM main.Main main
-INFOS: Test de logger
-oct. 13, 2017 6:04:12 PM main.Main main
-INFOS: Test de logger
-oct. 13, 2017 6:04:12 PM main.Main main
-INFOS: Compte 09a764e6-c9eb-4677-8fc0-15387a5d7d5b
-Owner : John Doe
-Balance : 1500.0
-
-oct. 13, 2017 6:04:12 PM main.Main main
-INFOS: Compte 09a764e6-c9eb-4677-8fc0-15387a5d7d5b
-Owner : John Doe
-Balance : 1500.0
-
-oct. 13, 2017 6:06:42 PM main.Main main
-GRAVE: Overdraft. Current balance = 1500.0
-oct. 13, 2017 6:06:42 PM main.Main main
-GRAVE: Overdraft. Current balance = 1500.0
-oct. 13, 2017 6:06:42 PM main.Main main
-PRÉCIS: Withdraw operation of Vijay1900.0
-oct. 13, 2017 6:06:42 PM main.Main main
-PRÉCIS: Withdraw operation of Vijay1900.0
-oct. 13, 2017 6:06:42 PM main.Main main
-PRÉCIS: VIIIIIIIIIIIIIIIIIJAY
-oct. 13, 2017 6:06:42 PM main.Main main
-PRÉCIS: VIIIIIIIIIIIIIIIIIJAY
-oct. 13, 2017 6:06:42 PM main.Main main
-INFOS: Compte aba48320-8dda-4fcc-bf7a-87eef5a02b7a
-Owner : John Doe
-Balance : 1500.0
-
-oct. 13, 2017 6:06:42 PM main.Main main
-INFOS: Compte aba48320-8dda-4fcc-bf7a-87eef5a02b7a
-Owner : John Doe
-Balance : 1500.0
-

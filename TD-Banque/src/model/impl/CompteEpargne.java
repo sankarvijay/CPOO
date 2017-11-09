@@ -1,46 +1,32 @@
-package model;
+package model.impl;
 
 import model.dec.CompteManip;
+import model.exceptions.*;
 
-public final class CompteEpargne extends Compte
+public final class CompteEpargne extends Compte implements CompteManip
 {
 	private final float interestRates;
 
 	public CompteEpargne (String owner, double initalBalance, float interestRates)
     {
         super(owner, initalBalance);
-        if (interestRates > 0)
-        {
-        	 this.interestRates = interestRates;
-        }
-        else
-        {
-        	System.out.println ("Erreur : Taux d'interêt nul ou négatif !");
-        }
+            this.interestRates = interestRates;
     }
 
     public CompteEpargne (String owner, float interestRates)
     {
     	super(owner);
-    	if (interestRates > 0)
-        {
-        	 this.interestRates = interestRates;
-        }
-        else
-        {
-        	System.out.println ("Erreur : Taux d'interêt nul ou négatif !");
-        }
+            this.interestRates = interestRates;
     }
 
-    public getInterestRates ()
+    public float getInterestRates ()
     {
         return this.interestRates;
     }
 
-     @Override
     public double withdraw(double amount)
     {
-        if (this.getBalance()<= 50)
+        if (this.getBalance()-amount< 50)
         {
             System.out.println ("Erreur : Retrait impossible, solde insuffisant !");
         }
@@ -50,6 +36,7 @@ public final class CompteEpargne extends Compte
             this.setBalance(previous - amount);
             return this.getBalance();
         }
+        return 0d;
     }
 
     @Override
@@ -60,12 +47,11 @@ public final class CompteEpargne extends Compte
         return this.getBalance();
     }
 
-     @Override
+    @Override
     public String toString()
     {
         StringBuilder sb = new StringBuilder();
-        sb = super().tostring();
-        sb.append(" Interêt d'épargne : ").append(this.interestRates).append("%\n");
+        sb.append(super.toString()).append("\nInterêt d'épargne : ").append(this.interestRates).append("%\n");
         return sb.toString(); //Retouner avec le .toString() car c'est un stringBuilder (ATTENTION !!)
     }
 }

@@ -1,8 +1,8 @@
 package model.dec;
 
-import model.exceptions.InsufficientBalance;
+import model.exceptions.*;
 
 public interface CompteManip extends CompteItf
 {
-	double withdraw (double amount) throws InsufficientBalance;
+	double withdraw (double amount) throws InsufficientBalanceException ;
 }
